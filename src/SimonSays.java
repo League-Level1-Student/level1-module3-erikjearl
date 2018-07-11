@@ -24,12 +24,13 @@ public class SimonSays extends KeyAdapter {
 	// Complete steps 1 - 7 before you test
 	// 1. Declare a JFrame variable
 	JFrame frame = new JFrame();
+	Date timeAtStart = new Date();
 	
 	HashMap<Integer, String> images = new HashMap<Integer, String>();
 	private int imageIndex;
 	private int tries = 0;
 	private boolean simonSays = false;
-	Date timeAtStart;
+	
 	
 	public int points =0;
 
@@ -85,7 +86,10 @@ public class SimonSays extends KeyAdapter {
 			
 			JOptionPane.showMessageDialog(null, "Your final score was " + points +"/10 points");
 		
-			System.exit(0);
+			
+		Date timeAtEnd = new Date();
+		System.out.println((timeAtEnd.getTime()-timeAtStart.getTime())/1000);
+		System.exit(0);
 		}
 		
 			// 26. Tell the user their score
@@ -164,7 +168,7 @@ public class SimonSays extends KeyAdapter {
  * BONUS!
  * Add a timer :
  * ~~~ where the code starts running ~~~ 
- * timeAtStart = newDate();
+ * timeAtStart = new Date();
  *
  * ~~~ where the code ends ~~~ 
  * Date timeAtEnd = new Date();
