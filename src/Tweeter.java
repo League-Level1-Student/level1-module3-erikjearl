@@ -56,14 +56,14 @@ public class Tweeter implements ActionListener {
 		
 		p2.setBackground(Color.CYAN);
 		p2.setBorder(BorderFactory.createEtchedBorder());
-		p2.setPreferredSize(new Dimension (1100,100));
+		p2.setPreferredSize(new Dimension (1100,400));
 		frame.add(p2, BorderLayout.SOUTH);
 		
 		
 		pane = new JTextPane();
 		pane.setEditable(false);
 		pane.setForeground(Color.magenta);
-		pane.setBackground(null);
+		pane.setBackground(Color.CYAN);
 		p2.add(pane);
 		
 		frame.pack();
