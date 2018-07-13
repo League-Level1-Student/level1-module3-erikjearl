@@ -5,6 +5,8 @@
 
 import java.applet.AudioClip;
 import java.io.IOException;
+import java.util.Date;
+
 import javax.swing.JApplet;
 
 public class CowTimer {
@@ -15,7 +17,8 @@ public class CowTimer {
 
 	public static void main(String[] args) throws InterruptedException {
 		/* 1. Make a CowTimer, set the time and start it. */
-
+		
+		
 	}
 
 	private int minutes;
